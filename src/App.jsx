@@ -1,12 +1,14 @@
-import './App.css'
+import "@fontsource/open-sauce-sans";
+import Navbar from "./components/layouts/navbar.jsx";
+import Footer from "./components/layouts/footer.jsx";
 
 function App() {
-
   return (
     <>
-      <h1>HOLA Mati</h1>
+      <Navbar />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
