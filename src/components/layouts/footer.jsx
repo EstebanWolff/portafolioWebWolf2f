@@ -7,7 +7,12 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {/* Columna 1: Wolf2f */}
         <div className="flex flex-col items-center">
-          <p className="font-bold text-lg mb-4 hover:text-gray-300">Wolf2f</p>
+          <p
+            translate="no"
+            className="font-bold text-lg mb-4 hover:text-gray-300"
+          >
+            Wolf2f
+          </p>
           <img
             src={SimpleWhiteFoto}
             alt="Logo de Wolf2f"
@@ -100,7 +105,9 @@ const Footer = () => {
               <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
               <path d="M16.5 7.5l0 .01"></path>
             </svg>
-            <p className="ml-2">_wolf2f_</p>
+            <p translate="no" className="ml-2">
+              _wolf2f_
+            </p>
           </a>
         </div>
       </div>

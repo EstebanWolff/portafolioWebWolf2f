@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost text-xl text-white">Wolf2f</a>
+        <a  translate="no" className="btn btn-ghost text-xl text-white">Wolf2f</a>
       </div>
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">

@@ -14,76 +14,101 @@ import FotoEdinson from "../../assets/image/presentacion/fotoEdinson.png";
 
 const galery = () => {
   return (
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10 mt-10">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src={FotoCanela} alt=""></img>
+    <>
+      <h1
+        className="mt-6 text-black text-[34px]"
+        style={{ textAlign: "center" }}
+      >
+        Coming soon, official website presentation
+      </h1>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10 mt-8 mr-2 ml-2">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoCanela}
+            alt="foto perrita canela"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoManu}
+            alt="foto adulto mayor"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoAutoViejo}
+            alt="automovil en la calle"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoParque}
+            alt="foto de un parque"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoCiduadSantiago}
+            alt="foto santiago chile"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoCaballero}
+            alt="foto El tabo caballero"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoDiegoPablo}
+            alt="foto artista Dacuzza"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoHallowen}
+            alt="Foto en Halloween"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FutbolChoque}
+            alt="Foto Futbol"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoSofi}
+            alt="Foto gatita sofi"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoManuTatto}
+            alt="Foto playa tatto"
+          ></img>
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={FotoEdinson}
+            alt="Foto retrato"
+          ></img>
+        </div>
       </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src={FotoManu} alt=""></img>
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src={FotoAutoViejo}
-          alt=""
-        ></img>
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src={FotoParque} alt=""></img>
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src={FotoCiduadSantiago}
-          alt=""
-        ></img>
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src={FotoCaballero}
-          alt=""
-        ></img>
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src={FotoDiegoPablo}
-          alt=""
-        ></img>
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src={FotoHallowen}
-          alt=""
-        ></img>
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src={FutbolChoque}
-          alt=""
-        ></img>
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src={FotoSofi} alt=""></img>
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src={FotoManuTatto}
-          alt=""
-        ></img>
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src={FotoEdinson}
-          alt=""
-        ></img>
-      </div>
-    </div>
+    </>
   );
 };
 export default galery;
