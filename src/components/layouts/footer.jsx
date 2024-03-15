@@ -3,7 +3,7 @@ import SimpleWhiteFoto from "../../assets/image/logoWOLF2F/simpleWhite.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-6 fixed bottom-0 w-full">
+    <footer className="bg-gray-900 text-white py-6  bottom-0 w-full">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {/* Columna 1: Wolf2f */}
         <div className="flex flex-col items-center">
@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
 
         {/* Columna 2: Descripción */}
-        <div className="text-sm mr-12">
+        <div className="text-sm mr-12 ml-4">
           <p className="font-bold text-lg hover:text-gray-300">Description</p>
           <p className="mt-4">
             At Wolf2f, we fuse the creativity of photography, the power of
@@ -27,9 +27,9 @@ const Footer = () => {
         </div>
 
         {/* Columna 3: Redes Sociales */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start ml-4">
           <p className="font-bold text-lg mb-4 hover:text-gray-300">
-            Social Medias
+            Socials Media
           </p>
 
           <a
@@ -56,7 +56,7 @@ const Footer = () => {
 
           <a
             className="flex items-center text-white hover:text-gray-300 mb-2"
-            href="mailto:lobos.rivera.esteb@gmail.com"
+            href="mailto:es.wolf2f@gmail.com"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const Footer = () => {
               <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
               <path d="M3 7l9 6l9 -6"></path>
             </svg>
-            <p className="ml-2">lobos.rivera.esteb@gmail.com</p>
+            <p className="ml-2">es.wolf2f@gmail.com</p>
           </a>
 
           <a
