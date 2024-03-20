@@ -11,7 +11,7 @@ const Card = () => {
 
   return (
     <div
-      className={`fixed bottom-4 right-4 w-36 h-${
+      className={`fixed bottom-4 right-4 w-36 sm:w-auto h-${
         isSmall ? "12" : "48"
       } bg-[#FCFFDE] p-4 transition duration-300 ease-in-out transform hover:translate-y-[-2px] hover:shadow-lg`}
       style={{ zIndex: "9999" }} // Añadir zIndex para mantener el componente por encima de todo

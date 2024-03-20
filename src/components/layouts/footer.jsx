@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           <p
             translate="no"
-            className="font-bold text-lg mb-4 hover:text-gray-300"
+            className="font-bold text-lg mb-4 text-[#FCFFDE] hover:text-white"
           >
             Wolf2f
           </p>
@@ -22,7 +22,9 @@ const Footer = () => {
 
         {/* Columna 2: Descripción */}
         <div className="text-sm mr-12 ml-4">
-          <p className="font-bold text-lg hover:text-gray-300">Description</p>
+          <p className="font-bold text-lg text-[#FCFFDE] hover:text-white">
+            Description
+          </p>
           <p className="mt-4">
             At Wolf2f, we fuse the creativity of photography, the power of
             audiovisual projects, and the precision of web development with an
@@ -33,12 +35,12 @@ const Footer = () => {
 
         {/* Columna 3: Redes Sociales */}
         <div className="flex flex-col items-start ml-4">
-          <p className="font-bold text-lg mb-4 hover:text-gray-300">
+          <p className="font-bold text-lg mb-4 text-[#FCFFDE] hover:text-white">
             Socials Media
           </p>
 
           <a
-            className="flex items-center text-white hover:text-gray-300 mb-2"
+            className="flex items-center text-white text-white hover:text-[#FCFFDE] mb-2"
             href="tel:+14422856391"
           >
             <svg
@@ -56,11 +58,13 @@ const Footer = () => {
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
             </svg>
-            <p className="ml-2">+1 (442) 285 6391</p>
+            <p className="ml-2 text-white hover:text-[#FCFFDE]">
+              +1 (442) 285 6391
+            </p>
           </a>
 
           <a
-            className="flex items-center text-white hover:text-gray-300 mb-2"
+            className="flex items-center text-white text-white hover:text-[#FCFFDE]  mb-2"
             href="mailto:es.wolf2f@gmail.com"
           >
             <svg
@@ -83,7 +87,7 @@ const Footer = () => {
           </a>
 
           <a
-            className="flex items-center text-white hover:text-gray-300"
+            className="flex items-center text-white text-white hover:text-[#FCFFDE]"
             href="https://www.instagram.com/_wolf2f_/"
             target="_blank"
             rel="noopener noreferrer"
