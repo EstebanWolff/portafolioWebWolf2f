@@ -15,99 +15,106 @@ import FotoEdinson from "../../assets/image/presentacion/fotoEdinson.png";
 const galery = () => {
   return (
     <>
-      <h1
-        className="mt-6 text-black text-[34px]"
-        style={{ textAlign: "center" }}
-      >
-        Coming soon, official website presentation
-      </h1>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10 mt-8 mr-2 ml-2">
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoCanela}
-            alt="foto perrita canela"
-          ></img>
+      <section className="w-full py-12 bg-white">
+        <div className="container grid gap-6 md:gap-8 px-4 md:px-6 max-w-6xl mx-auto text-black">
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
+            <div className="grid gap-1">
+              <h1 className="text-3xl font-bold tracking-tight">
+                Type of photographs we offer:
+              </h1>
+              <p className="text-gray-500 dark:text-gray-400">
+                Find the style of photography you are looking for:{" "}
+              </p>
+            </div>
+          </div>
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid gap-4 relative group">
+              <img
+                alt="Sport"
+                className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
+                height={600}
+                src={FutbolChoque}
+                width={450}
+              />
+              <div className="grid gap-1">
+                <h3 className="font-semibold">Sport</h3>
+                <p className="text-sm leading-none">
+                  Photos of you or your team.
+                </p>
+              </div>
+            </div>
+            <div className="grid gap-4 relative group">
+              <img
+                alt="Running"
+                className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
+                height={600}
+                src={FotoManu}
+                width={450}
+              />
+              <div className="grid gap-1">
+                <h3 className="font-semibold">Portrait</h3>
+                <p className="text-sm leading-none">Customized portraits.</p>
+              </div>
+            </div>
+            <div className="grid gap-4 relative group">
+              <img
+                alt="Football"
+                className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
+                height={600}
+                src={FotoCanela}
+                width={450}
+              />
+              <div className="grid gap-1">
+                <h3 className="font-semibold">Animals</h3>
+                <p className="text-sm leading-none">
+                  Your pet deserves to be remembered.
+                </p>
+              </div>
+            </div>
+            <div className="grid gap-4 relative group">
+              <img
+                alt="Football"
+                className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
+                height={600}
+                src={FotoCiduadSantiago}
+                width={450}
+              />
+              <div className="grid gap-1">
+                <h3 className="font-semibold">Cities </h3>
+                <p className="text-sm leading-none">Photos for your project.</p>
+              </div>
+            </div>
+            <div className="grid gap-4 relative group">
+              <img
+                alt="Football"
+                className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
+                height={600}
+                src={FotoParque}
+                width={450}
+              />
+              <div className="grid gap-1">
+                <h3 className="font-semibold">Natural</h3>
+                <p className="text-sm leading-none">Natural photos for you.</p>
+              </div>
+            </div>
+            <div className="grid gap-4 relative group">
+              <img
+                alt="Football"
+                className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
+                height={600}
+                src={FotoAutoViejo}
+                width={450}
+              />
+              <div className="grid gap-1">
+                <h3 className="font-semibold">Automobiles</h3>
+                <p className="text-sm leading-none">
+                  Photos of your companion on wheels .
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoManu}
-            alt="foto adulto mayor"
-          ></img>
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoAutoViejo}
-            alt="automovil en la calle"
-          ></img>
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoParque}
-            alt="foto de un parque"
-          ></img>
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoCiduadSantiago}
-            alt="foto santiago chile"
-          ></img>
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoCaballero}
-            alt="foto El tabo caballero"
-          ></img>
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoDiegoPablo}
-            alt="foto artista Dacuzza"
-          ></img>
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoHallowen}
-            alt="Foto en Halloween"
-          ></img>
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FutbolChoque}
-            alt="Foto Futbol"
-          ></img>
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoSofi}
-            alt="Foto gatita sofi"
-          ></img>
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoManuTatto}
-            alt="Foto playa tatto"
-          ></img>
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src={FotoEdinson}
-            alt="Foto retrato"
-          ></img>
-        </div>
-      </div>
+      </section>
     </>
   );
 };
