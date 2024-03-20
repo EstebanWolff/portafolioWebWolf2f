@@ -3,7 +3,7 @@ import SimpleWhiteFoto from "../../assets/image/logoWOLF2F/simpleWhite.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-6  bottom-0 w-full">
+    <footer className="bg-[#000000] text-white py-6  bottom-0 w-full">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {/* Columna 1: Wolf2f */}
         <div className="flex flex-col items-center">
@@ -106,7 +106,7 @@ const Footer = () => {
               <path d="M16.5 7.5l0 .01"></path>
             </svg>
             <p translate="no" className="ml-2">
-              _wolf2f_
+              _Wolf2f_
             </p>
           </a>
         </div>
