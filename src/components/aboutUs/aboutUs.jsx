@@ -13,7 +13,7 @@ const AboutUs = () => {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Our Services
               </h2>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-[#FCFFDE]">
+              <p className="mx-auto max-w-[700px] text-[#FCFFDE] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Discover the solutions we offer to boost your brand and connect
                 with your audience.
               </p>
@@ -40,7 +40,7 @@ const AboutUs = () => {
                 </div>
                 <div className="space-y-2">
                   <h3 className="font-bold"> Photography and Video</h3>
-                  <p className="text-sm text-gray-500 text-zinc-300">
+                  <p className="text-sm text-[#FCFFDE] text-zinc-300">
                     We have for you personalized photography and video services.
                   </p>
                 </div>
@@ -73,7 +73,7 @@ const AboutUs = () => {
                 </div>
                 <div className="space-y-2">
                   <h3 className="font-bold">Web Design</h3>
-                  <p className="text-sm text-gray-500 text-zinc-300">
+                  <p className="text-sm text-[#FCFFDE] text-zinc-300">
                     We create attractive and functional sites that captivate
                     your visitors.
                   </p>
@@ -101,7 +101,7 @@ const AboutUs = () => {
                 </div>
                 <div className="space-y-2">
                   <h3 className="font-bold">Social Media</h3>
-                  <p className="text-sm text-gray-500 text-zinc-300">
+                  <p className="text-sm text-[#FCFFDE] text-zinc-300">
                     We manage your profiles to increase interaction and
                     followers.
                   </p>
@@ -174,7 +174,7 @@ const AboutUs = () => {
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#FCFFDE] text-stroke-black">
                     We are a team passionate about technology, specializing in:
                   </h2>
-                  <p className="text-[#FCFFDE] max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 text-stroke-black">
+                  <p className="text-[#FCFFDE] max-w-[700px] text-[#FCFFDE] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 text-stroke-black">
                     Our passion lies in capturing meaningful moments through
                     photographic and audiovisual projects, implementing
                     strategies to enhance online presence through social media,
