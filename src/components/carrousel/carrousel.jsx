@@ -1,5 +1,5 @@
 import React from "react";
-import FotoVictorVille from "../../assets/image/presentacion/victorVilleFoto.PNG";
+import FotoVictorVille from "../../assets/image/presentacion/victorVilleFoto.webp";
 
 const Carrousel = () => {
   return (

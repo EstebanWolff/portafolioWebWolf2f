@@ -3,7 +3,7 @@ import SimpleWhiteFoto from "../../assets/image/logoWOLF2F/simpleWhite.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#000000] text-white py-6  bottom-0 w-full">
+    <section className="bg-[#000000] text-white py-6  bottom-0 w-full">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {/* Columna 1: Wolf2f */}
         <div className="flex flex-col items-center">
@@ -115,7 +115,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </footer>
+    </section>
   );
 };
 
