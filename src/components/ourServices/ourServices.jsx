@@ -1,112 +1,138 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
-const ourServices = () => {
+const services = [
+  {
+    title: "Photography",
+    description:
+      "Capture the essence of your brand with high-quality visuals that leave a lasting impression.",
+    icon: "camera",
+  },
+  {
+    title: "Web Design",
+    description:
+      "Engaging, modern, and responsive websites that provide seamless user experiences.",
+    icon: "world-www",
+  },
+  {
+    title: "Social Media",
+    description:
+      "Strategic social media management that enhances brand presence and audience engagement.",
+    icon: "brand-instagram",
+  },
+  {
+    title: "Data Science",
+    description: "We analyze your data to improve your business decisions.",
+    icon: "database",
+  },
+  {
+    title: "Branding",
+    description: "We help define your brand identity for a lasting impact.",
+    icon: "brush",
+  },
+  {
+    title: "Videos",
+    description: "We create high-quality videos to showcase your brand effectively.",
+    icon: "video",
+  },
+];
+
+const OurServices = () => {
+  const [animateKey, setAnimateKey] = useState(0);
+
+  // Re-trigger animation every 20 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimateKey((prevKey) => prevKey + 1); // Update key to trigger re-render
+    }, 20000); // 20 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
+
   return (
-    <section className="flex-1 overflow-y-auto ">
-      <div className="bg-black py-12 ">
-        <div className="mt-14 mb-20 text-[#FCFFDE] container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-          <div className="space-y-2">
+    <section className="flex-1 overflow-y-auto">
+      <div className="bg-black py-12 pb-36">
+        <div className="container mx-auto px-4 text-center text-[#FCFFDE] md:px-6">
+          {/* Animación de título y descripción */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="space-y-4 mb-10"
+          >
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Our Services
             </h2>
-            <p className="mx-auto max-w-[700px] text-[#FCFFDE] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Discover the solutions we offer to boost your brand and connect
-              with your audience.
+            <p className="mx-auto max-w-[700px] md:text-xl">
+              Discover the solutions we offer to boost your brand and connect with your audience.
             </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3 md:gap-0">
-            <div className="space-y-2">
-              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#FCFFDE] mx-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"
+          </motion.div>
+
+          {/* Grid de servicios con animación */}
+          <motion.div key={animateKey}> {/* Re-trigger animation for services */}
+            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+              {services.map((service, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: index * 0.2 }}
+                  className="space-y-4 p-6 bg-[#1a1a1a] rounded-lg shadow-lg"
+                  whileHover={{
+                    backgroundColor: "#333333", // Color ligeramente más claro
+                    scale: 1.05, // Escala para el hover
+                    transition: { duration: 0.3 },
+                  }}
                 >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
-                  <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                </svg>
-              </div>
-              <div className="space-y-2">
-                <h3 className="font-bold"> Photography and Video</h3>
-                <p className="text-sm text-[#FCFFDE] text-zinc-300">
-                  We have for you personalized photography and video services.
-                </p>
-              </div>
+                  {/* Ícono con animación */}
+                  <motion.div
+                    initial={{ scale: 0.5, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: index * 0.3 }}
+                    className="flex items-center justify-center w-16 h-16 rounded-full bg-[#FCFFDE] mx-auto"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="black"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <use href={`https://tabler-icons.io/static/tabler-icons/${service.icon}.svg`} />
+                    </svg>
+                  </motion.div>
+
+                  {/* Título con animación */}
+                  <motion.h3
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.4 }}
+                    className="font-bold text-lg"
+                  >
+                    {service.title}
+                  </motion.h3>
+
+                  {/* Descripción con animación */}
+                  <motion.p
+                    initial={{ opacity: 0, x: 10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.5 }}
+                    className="text-sm text-zinc-300"
+                  >
+                    {service.description}
+                  </motion.p>
+                </motion.div>
+              ))}
             </div>
-            <div className="space-y-2">
-              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#FCFFDE] mx-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  class="icon icon-tabler icons-tabler-outline icon-tabler-world-www"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4" />
-                  <path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4" />
-                  <path d="M12.5 3a16.989 16.989 0 0 1 1.828 4" />
-                  <path d="M19.5 17a9 9 0 0 1 -7.5 4a8.991 8.991 0 0 1 -7.484 -4" />
-                  <path d="M11.5 21a16.989 16.989 0 0 1 -1.826 -4" />
-                  <path d="M12.5 21a16.989 16.989 0 0 0 1.828 -4" />
-                  <path d="M2 10l1 4l1.5 -4l1.5 4l1 -4" />
-                  <path d="M17 10l1 4l1.5 -4l1.5 4l1 -4" />
-                  <path d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4" />
-                </svg>
-              </div>
-              <div className="space-y-2">
-                <h3 className="font-bold">Web Design</h3>
-                <p className="text-sm text-[#FCFFDE] text-zinc-300">
-                  We create attractive and functional sites that captivate your
-                  visitors.
-                </p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#FCFFDE] mx-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                  <path d="M16.5 7.5l0 .01" />
-                </svg>
-              </div>
-              <div className="space-y-2">
-                <h3 className="font-bold">Social Media</h3>
-                <p className="text-sm text-[#FCFFDE] text-zinc-300">
-                  We manage your profiles to increase interaction and followers.
-                </p>
-              </div>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
   );
 };
 
-export default ourServices;
+export default OurServices;

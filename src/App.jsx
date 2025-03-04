@@ -20,7 +20,7 @@ function App() {
         <OurServices />
         <AboutUs />
         <Galery />
-        <Contact />
+
       </main>
       <footer>
         <Footer />
