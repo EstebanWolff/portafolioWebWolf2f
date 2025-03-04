@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import FotoParque from "../../assets/image/presentacion/fondoParque.JPG";
 import FutbolChoque from "../../assets/image/presentacion/futbolChoque.JPG";
 import FotoManu from "../../assets/image/presentacion/fotoManu.JPG";
@@ -22,93 +22,94 @@ const galery = () => {
               Type of photographs we offer:
             </h1>
             <p className="text-gray-500 dark:text-gray-500">
-              Find the style of photography you are looking for:{" "}
+              Find the style of photography you are looking for:
             </p>
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 gap-8">
-          <div className="grid gap-4 relative group">
+        {/* Grid de las cartas */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+          {/* Carta 1 */}
+          <div className="grid gap-4 relative group max-w-xs sm:max-w-xs mx-auto">
             <img
               alt="Sport"
               className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
-              height={600}
+              height={300}
               src={FutbolChoque}
-              width={450}
+              width={225}
             />
             <div className="grid gap-1">
               <h3 className="font-semibold">Sport</h3>
-              <p className="text-sm leading-none">
-                Photos of you or your team.
-              </p>
+              <p className="text-sm leading-none">Photos of you or your team.</p>
             </div>
           </div>
-          <div className="grid gap-4 relative group">
+          {/* Carta 2 */}
+          <div className="grid gap-4 relative group max-w-xs sm:max-w-xs mx-auto">
             <img
               alt="Running"
               className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
-              height={600}
+              height={300}
               src={FotoManu}
-              width={450}
+              width={225}
             />
             <div className="grid gap-1">
               <h3 className="font-semibold">Portrait</h3>
               <p className="text-sm leading-none">Customized portraits.</p>
             </div>
           </div>
-          <div className="grid gap-4 relative group">
+          {/* Carta 3 */}
+          <div className="grid gap-4 relative group max-w-xs sm:max-w-xs mx-auto">
             <img
               alt="Football"
               className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
-              height={600}
+              height={300}
               src={FotoCanela}
-              width={450}
+              width={225}
             />
             <div className="grid gap-1">
               <h3 className="font-semibold">Animals</h3>
-              <p className="text-sm leading-none">
-                Your pet deserves to be remembered.
-              </p>
+              <p className="text-sm leading-none">Your pet deserves to be remembered.</p>
             </div>
           </div>
-          <div className="grid gap-4 relative group">
+          {/* Carta 4 */}
+          <div className="grid gap-4 relative group max-w-xs sm:max-w-xs mx-auto">
             <img
               alt="Football"
               className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
-              height={600}
+              height={300}
               src={FotoCiduadSantiago}
-              width={450}
+              width={225}
             />
             <div className="grid gap-1">
-              <h3 className="font-semibold">Cities </h3>
+              <h3 className="font-semibold">Cities</h3>
               <p className="text-sm leading-none">Photos for your project.</p>
             </div>
           </div>
-          <div className="grid gap-4 relative group">
+          {/* Carta 5 */}
+          <div className="grid gap-4 relative group max-w-xs sm:max-w-xs mx-auto">
             <img
               alt="Football"
               className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
-              height={600}
+              height={300}
               src={FotoParque}
-              width={450}
+              width={225}
             />
             <div className="grid gap-1">
               <h3 className="font-semibold">Natural</h3>
               <p className="text-sm leading-none">Natural photos for you.</p>
             </div>
           </div>
-          <div className="grid gap-4 relative group">
+          {/* Carta 6 */}
+          <div className="grid gap-4 relative group max-w-xs sm:max-w-xs mx-auto">
             <img
               alt="Football"
               className="rounded-lg object-cover w-full aspect-[3/4] group-hover:opacity-50 transition-opacity"
-              height={600}
+              height={300}
               src={FotoAutoViejo}
-              width={450}
+              width={225}
             />
             <div className="grid gap-1">
               <h3 className="font-semibold">Automobiles</h3>
-              <p className="text-sm leading-none">
-                Photos of your companion on wheels .
-              </p>
+              <p className="text-sm leading-none">Photos of your companion on wheels.</p>
             </div>
           </div>
         </div>
@@ -116,4 +117,5 @@ const galery = () => {
     </section>
   );
 };
+
 export default galery;
