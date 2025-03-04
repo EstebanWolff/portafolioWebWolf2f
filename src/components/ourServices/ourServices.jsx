@@ -1,39 +1,40 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { FaCamera, FaDesktop, FaInstagram, FaDatabase, FaPaintBrush, FaVideo } from "react-icons/fa";
 
 const services = [
   {
     title: "Photography",
     description:
       "Capture the essence of your brand with high-quality visuals that leave a lasting impression.",
-    icon: "camera",
+    icon: <FaCamera />,
   },
   {
     title: "Web Design",
     description:
       "Engaging, modern, and responsive websites that provide seamless user experiences.",
-    icon: "world-www",
+    icon: <FaDesktop />,
   },
   {
     title: "Social Media",
     description:
       "Strategic social media management that enhances brand presence and audience engagement.",
-    icon: "brand-instagram",
+    icon: <FaInstagram />,
   },
   {
     title: "Data Science",
     description: "We analyze your data to improve your business decisions.",
-    icon: "database",
+    icon: <FaDatabase />,
   },
   {
     title: "Branding",
     description: "We help define your brand identity for a lasting impact.",
-    icon: "brush",
+    icon: <FaPaintBrush />,
   },
   {
     title: "Videos",
     description: "We create high-quality videos to showcase your brand effectively.",
-    icon: "video",
+    icon: <FaVideo />,
   },
 ];
 
@@ -91,19 +92,7 @@ const OurServices = () => {
                     transition={{ duration: 0.8, delay: index * 0.3 }}
                     className="flex items-center justify-center w-16 h-16 rounded-full bg-[#FCFFDE] mx-auto"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="black"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <use href={`https://tabler-icons.io/static/tabler-icons/${service.icon}.svg`} />
-                    </svg>
+                    <span className="text-black">{service.icon}</span> {/* Color negro para el ícono */}
                   </motion.div>
 
                   {/* Título con animación */}

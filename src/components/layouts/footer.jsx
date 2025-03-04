@@ -1,5 +1,5 @@
 import React from "react";
-import SimpleWhiteFoto from "../../assets/image/logoWOLF2F/simpleWhite.png";
+import SimpleWhiteFoto from "../../assets/image/logoWOLF2F/MiniMiniLogoWolf2f.png";
 
 const Footer = () => {
   return (
